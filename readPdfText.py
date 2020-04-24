@@ -21,7 +21,7 @@ inputDir=pathlib.Path('data')
 inputFiles=inputDir.glob('*.txt')
 
 patcaseno=re.compile('[１２３４５６７８９][０１２３４５６７８９][０１２３４５６７８９]')
-patmmdd=re.compile('[１２]*[１２３４５６７８９]月[１２３]*[０１２３４５６７８９]日')
+patmmdd=re.compile('[12１２]*[123456789１２３４５６７８９]月[0123１２３]*[0123456789０１２３４５６７８９]日')
 convertDict={
     '１':'1',
     '２':'2',
